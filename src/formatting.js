@@ -30,3 +30,5 @@ function lengthOfLongestWord(string) {
     longestWordLength = words[0].length;
     return longestWordLength
 }
+
+module.exports = { getLastElement, isPalindrome, capitalizeWords, lengthOfLongestWord }
