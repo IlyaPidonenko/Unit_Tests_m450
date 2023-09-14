@@ -17,8 +17,8 @@ function letterFrequency(word) {
     return letterAmount
   }
   
-  function sortByKey(array) {
-    sortedObjects = array.sort((a,b) => a.id - b.id)
+  function sortByKey(array, key) {
+    sortedObjects = array.sort((a,b) => a[key] - b[key])
     return sortedObjects
   }
 
@@ -34,6 +34,6 @@ function letterFrequency(word) {
   }
 
   arrayObject = [person2, person1, person3]
-  console.log(sortByKey(arrayObject))
+  console.log(sortByKey(arrayObject, "id"))
 
   
